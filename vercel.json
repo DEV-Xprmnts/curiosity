@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "curiosity_backend.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/curiosity_backend.js"
+      "source": "/(.*)",
+      "destination": "/api"
     }
   ]
 }
